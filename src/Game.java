@@ -101,7 +101,7 @@ public class Game {
 			//Spieler 1 ist am Zug
 			if(playerA.isMyturn() == true) {
 				updateField(playerA.moveToCards(card));
-				System.out.println(playerA.getName() + ": " + "[" + playerA.getMatches() + "] " + "Paerchen" + "\t" + " <-->  " + playerB.getName() + ": " + "[" + playerB.getMatches() + "] " + "P�rchen");
+				System.out.println(playerA.getName() + ": " + "[" + playerA.getMatches() + "] " + "Paerchen" + "\t" + " <-->  " + playerB.getName() + ": " + "[" + playerB.getMatches() + "] " + "Paerchen");
 
 				if(playerA.isMyturn() == false) {
 					playerB.setMyturn(true);
@@ -112,13 +112,13 @@ public class Game {
 					card[playerA.getxPrev()][playerA.getyPrev()].flipCard(card, playerA.getxPrev(), playerA.getyPrev(), false);
 					Thread.sleep(1000);
 					updateField(card);
-					System.out.println(playerA.getName() + ": " + "[" + playerA.getMatches() + "] " + "Paerchen" + "\t" + " <-->  " + playerB.getName() + ": " + "[" + playerB.getMatches() + "] " + "PPrchen");
+					System.out.println(playerA.getName() + ": " + "[" + playerA.getMatches() + "] " + "Paerchen" + "\t" + " <-->  " + playerB.getName() + ": " + "[" + playerB.getMatches() + "] " + "Paerchen");
 				}
 				
 			//Spieler 2 ist am Zug
 			}else if(playerB.isMyturn() == true) {
 				updateField(playerB.moveToCards(card));	
-				System.out.println(playerA.getName() + ": " + "[" + playerA.getMatches() + "] " + "Paerchen" + "\t" + " <-->  " + playerB.getName() + ": " + "[" + playerB.getMatches() + "] " + "PPaerchen");
+				System.out.println(playerA.getName() + ": " + "[" + playerA.getMatches() + "] " + "Paerchen" + "\t" + " <-->  " + playerB.getName() + ": " + "[" + playerB.getMatches() + "] " + "Paerchen");
 
 				if(playerB.isMyturn() == false) {
 					playerA.setMyturn(true);
@@ -129,7 +129,7 @@ public class Game {
 					card[playerB.getxPrev()][playerB.getyPrev()].flipCard(card, playerB.getxPrev(), playerB.getyPrev(), false);
 					Thread.sleep(1000);
 					updateField(card);
-					System.out.println(playerA.getName() + ": " + "[" + playerA.getMatches() + "] " + "Paerchen" + "\t" + " <-->  " + playerB.getName() + ": " + "[" + playerB.getMatches() + "] " + "PPrchen");
+					System.out.println(playerA.getName() + ": " + "[" + playerA.getMatches() + "] " + "Paerchen" + "\t" + " <-->  " + playerB.getName() + ": " + "[" + playerB.getMatches() + "] " + "Paerchen");
 				}
 			}		
 		}while((playerA.getMatches() + playerB.getMatches()) < (card.length * card.length / 2));

@@ -193,4 +193,4 @@ console-memory-game/
 
 ## Lizenz
 
-Dieses Projekt steht unter der MIT-Lizenz.
+Dieses Projekt steht unter der [MIT License](LICENSE).
